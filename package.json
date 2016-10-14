@@ -1,0 +1,47 @@
+{
+  "name": "color-jumper",
+  "version": "1.0.0",
+  "description": "simple color based jumping game",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentin Rüchardt",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-remove-code": "^1.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-watch": "^4.3.6",
+    "imagemin-pngquant": "^4.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browser": {
+    "jquery": "./www/components/jquery/dist/jquery.min.js",
+    "ui-router": "./www/components/angular-ui-router/release/angular-ui-router.min.js",
+    "angular": "./www/components/angular/angular.min.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "materialize": "materialize",
+    "angular": "angular"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

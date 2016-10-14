@@ -1,0 +1,24 @@
+{
+  "name": "color-jumper",
+  "description": "simple color based jumping game",
+  "main": "app/index.js",
+  "authors": [
+    "Valentin Rüchardt"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8",
+    "jquery": "~3.1.1",
+    "angular-ui-router": "~0.3.1"
+  }
+}
